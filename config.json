@@ -1,0 +1,148 @@
+{
+        "site": {
+            "name": "ویترین",
+            "description": "فروشگاه آزمایشی ویترین",
+            "icon": "https://vitrin-store.ir/shop-resources/cKvifROQYh/shop-logos/1732178597_16936.png",
+            "logo": "https://vitrin-store.ir/shop-resources/cKvifROQYh/shop-logos/1732178597_16936.png"
+        },
+        "layout": {
+            "hasMegaMenu": true,
+            "productListView": "grid",
+            "productCardFields": [
+                "brand",
+                "rating",
+                "price",
+                "discount",
+                "stock"
+            ]
+        },
+        "redirects": [
+            {
+                "source": "/about-us",
+                "destination": "/about",
+                "permanent": true
+            },
+            {
+                "source": "/old-shop",
+                "destination": "/products",
+                "permanent": false
+            }
+        ],
+        "privateRoutes": {
+            "enabled": true,
+            "scope": "pages",
+            "pages": ["/panel", "/checkout"],
+            "exclude": ["/signin", "/signup", "/maintenance"]
+        },
+        "sitemap": {
+            "enabled": true,
+            "includeStaticRoutes": true,
+            "includeProducts": true,
+            "entries": [
+                {
+                    "path": "/about",
+                    "changeFrequency": "monthly",
+                    "priority": 0.6
+                }
+            ],
+            "exclude": []
+        },
+        "robots": {
+            "rules": [
+                {
+                    "userAgent": "*",
+                    "allow": "/",
+                    "disallow": ["/api", "/signin", "/signup", "/panel"]
+                }
+            ]
+        },
+        "maintenance": {
+            "enabled": true,
+            "scope": "pages",
+            "mode": "maintenance",
+            "pages": [
+                {
+                    "path": "/about",
+                    "mode": "offHours",
+                    "message": "صفحه درباره ما در حال حاضر خارج از ساعت کاری است.",
+                    "workingHours": "شنبه تا چهارشنبه، ۰۹:۰۰ تا ۱۷:۰۰"
+                },
+                {
+                    "path": "/cart",
+                    "mode": "maintenance",
+                    "message": "سبد خرید موقتاً در حال تعمیر است."
+                }
+            ],
+            "message": "این بخش موقتاً در دسترس نیست."
+        },
+        "theme": {
+            "light": {
+                "background": "#f8fafc",
+                "foreground": "#0f172a",
+                "card": "#ffffff",
+                "cardForeground": "#0f172a",
+                "popover": "#ffffff",
+                "popoverForeground": "#0f172a",
+                "primary": "#2563eb",
+                "primaryForeground": "#ffffff",
+                "secondary": "#e2e8f0",
+                "secondaryForeground": "#334155",
+                "muted": "#f1f5f9",
+                "mutedForeground": "#64748b",
+                "accent": "#f97316",
+                "accentForeground": "#ffffff",
+                "destructive": "#dc2626",
+                "border": "#e2e8f0",
+                "input": "#e2e8f0",
+                "ring": "#2563eb",
+                "chart1": "#2563eb",
+                "chart2": "#f97316",
+                "chart3": "#16a34a",
+                "chart4": "#9333ea",
+                "chart5": "#dc2626",
+                "sidebar": "#ffffff",
+                "sidebarForeground": "#0f172a",
+                "sidebarPrimary": "#2563eb",
+                "sidebarPrimaryForeground": "#ffffff",
+                "sidebarAccent": "#f1f5f9",
+                "sidebarAccentForeground": "#0f172a",
+                "sidebarBorder": "#e2e8f0",
+                "sidebarRing": "#2563eb",
+                "radius": "1px"
+            },
+            "dark": {
+                "background": "#020617",
+                "foreground": "#f8fafc",
+                "card": "#0f172a",
+                "cardForeground": "#f8fafc",
+                "popover": "#0f172a",
+                "popoverForeground": "#f8fafc",
+                "primary": "#3b82f6",
+                "primaryForeground": "#ffffff",
+                "secondary": "#1e293b",
+                "secondaryForeground": "#cbd5e1",
+                "muted": "#1e293b",
+                "mutedForeground": "#94a3b8",
+                "accent": "#fb923c",
+                "accentForeground": "#ffffff",
+                "destructive": "#ef4444",
+                "border": "#334155",
+                "input": "#334155",
+                "ring": "#3b82f6",
+                "chart1": "#3b82f6",
+                "chart2": "#fb923c",
+                "chart3": "#22c55e",
+                "chart4": "#a855f7",
+                "chart5": "#ef4444",
+                "sidebar": "#020617",
+                "sidebarForeground": "#f8fafc",
+                "sidebarPrimary": "#3b82f6",
+                "sidebarPrimaryForeground": "#ffffff",
+                "sidebarAccent": "#1e293b",
+                "sidebarAccentForeground": "#f8fafc",
+                "sidebarBorder": "#334155",
+                "sidebarRing": "#3b82f6",
+                "radius": "1rem"
+            }
+        }
+    }

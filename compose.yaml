@@ -1,0 +1,9 @@
+services:
+  vitrin-mock-server:
+    build:
+      context: .
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+    restart: unless-stopped
