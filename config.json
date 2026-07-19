@@ -1,145 +1,225 @@
 {
-    "site": {
-      "name": "ویترین",
-      "description": "فروشگاه آزمایشی ویترین",
-      "icon": "https://vitrin-store.ir/shop-resources/cKvifROQYh/shop-logos/1732178597_16936.png",
-      "logo": "https://vitrin-store.ir/shop-resources/cKvifROQYh/shop-logos/1732178597_16936.png",
-      "shop_force_user_login": false
-    },
-    "layout": {
-      "hasMegaMenu": true,
-      "productListView": "grid",
-      "productCardFields": ["brand", "rating", "price", "discount", "stock"]
-    },
-    "cache": {
-      "cache_products_cache": true,
-      "cache_products_cache_timeout": 3,
-      "cache_products_cache_prefix": "products",
-      "cache_product_cache": true,
-      "cache_product_cache_timeout": 60,
-      "cache_product_cache_prefix": "product",
-      "cache_products_metadata_cache": true,
-      "cache_products_metadata_cache_timeout": 60,
-      "cache_products_metadata_cache_prefix": "products_metadata",
-      "cache_categories_cache": true,
-      "cache_categories_cache_timeout": 60,
-      "cache_categories_cache_prefix": "categories",
-      "cache_category_cache": true,
-      "cache_category_cache_timeout": 0,
-      "cache_category_cache_prefix": "category",
-      "cache_brands_cache": true,
-      "cache_brands_cache_timeout": 60,
-      "cache_brands_cache_prefix": "brands",
-      "cache_brand_cache": true,
-      "cache_brand_cache_timeout": 60,
-      "cache_brand_cache_prefix": "brand",
-      "cache_posts_cache": true,
-      "cache_posts_cache_timeout": 60,
-      "cache_posts_cache_prefix": "posts",
-      "cache_post_cache": true,
-      "cache_post_cache_timeout": 60,
-      "cache_post_cache_prefix": "post",
-      "cache_post_categories_cache": true,
-      "cache_post_categories_cache_timeout": 60,
-      "cache_post_categories_cache_prefix": "post_categories",
-      "cache_post_category_cache": true,
-      "cache_post_category_cache_timeout": 60,
-      "cache_post_category_cache_prefix": "post_category",
-      "cache_portfolio_cache": false,
-      "cache_portfolio_cache_timeout": 60,
-      "cache_portfolio_cache_prefix": "portfolio",
-      "cache_portfolios_cache": false,
-      "cache_portfolios_cache_timeout": 60,
-      "cache_portfolios_cache_prefix": "portfolios"
-    },
-    "maintenance": {
-      "enabled": true,
-      "scope": "pages",
-      "mode": "maintenance",
-      "message": "این بخش موقتاً در دسترس نیست.",
-      "pages": [
-        {
-          "path": "/about",
-          "mode": "offHours",
-          "message": "صفحه درباره ما در حال حاضر خارج از ساعت کاری است.",
-          "shop_opening_hour": "04:00:00",
-          "shop_closing_hour": "21:00:00"
-        },
-        {
-          "path": "/cart",
-          "mode": "maintenance",
-          "message": "سبد خرید موقتاً در حال تعمیر است."
-        }
-      ]
-    },
-    "theme": {
-      "light": {
-        "background": "#f8fafc",
-        "foreground": "#0f172a",
-        "card": "#ffffff",
-        "cardForeground": "#0f172a",
-        "popover": "#ffffff",
-        "popoverForeground": "#0f172a",
-        "primary": "#2563eb",
-        "primaryForeground": "#ffffff",
-        "secondary": "#e2e8f0",
-        "secondaryForeground": "#334155",
-        "muted": "#f1f5f9",
-        "mutedForeground": "#64748b",
-        "accent": "#f97316",
-        "accentForeground": "#ffffff",
-        "destructive": "#dc2626",
-        "border": "#e2e8f0",
-        "input": "#e2e8f0",
-        "ring": "#2563eb",
-        "chart1": "#2563eb",
-        "chart2": "#f97316",
-        "chart3": "#16a34a",
-        "chart4": "#9333ea",
-        "chart5": "#dc2626",
-        "sidebar": "#ffffff",
-        "sidebarForeground": "#0f172a",
-        "sidebarPrimary": "#2563eb",
-        "sidebarPrimaryForeground": "#ffffff",
-        "sidebarAccent": "#f1f5f9",
-        "sidebarAccentForeground": "#0f172a",
-        "sidebarBorder": "#e2e8f0",
-        "sidebarRing": "#2563eb",
-        "radius": "1px"
+  "site": {
+    "name": "ویترین شاپ",
+    "description": "گالری ویترین فعالیت رسمی خود را در سال 1390 در تهران اغاز کرد.این مجموعه ابتدا با هدف ارائه نگاهی متفاوت به صنعت طلا و جواهر پا به عرصه گذاشت.",
+    "icon": "https://www.realisable.co.uk/wp-content/themes/realisable/images/logos/shopify.svg",
+    "logo_dark": "https://images.seeklogo.com/logo-png/27/2/shopify-logo-png_seeklogo-273895.png",
+    "shop_force_user_login": false,
+    "tel_support": "05191002513",
+    "tel_sale": "05191097472",
+    "support_email": "support@vitrin.com",
+    "office_address": "دفتر: مشهد، بلوار سجاد، بین سجاد ۱۲ و ۱۴، مجتمع تجاری پاژ، طبقه همکف، گالری طلا",
+    "licenses": [
+      {
+        "id": "enamad",
+        "title": "نماد اعتماد",
+        "html": "<a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/'><img referrerpolicy='origin' src='https://www.novinhost.org/wp-content/uploads/2025/12/1d2ab0.png' alt='نماد اعتماد'></a>"
       },
-      "dark": {
-        "background": "#020617",
-        "foreground": "#f8fafc",
-        "card": "#0f172a",
-        "cardForeground": "#f8fafc",
-        "popover": "#0f172a",
-        "popoverForeground": "#f8fafc",
-        "primary": "#3b82f6",
-        "primaryForeground": "#ffffff",
-        "secondary": "#1e293b",
-        "secondaryForeground": "#cbd5e1",
-        "muted": "#1e293b",
-        "mutedForeground": "#94a3b8",
-        "accent": "#fb923c",
-        "accentForeground": "#ffffff",
-        "destructive": "#ef4444",
-        "border": "#334155",
-        "input": "#334155",
-        "ring": "#3b82f6",
-        "chart1": "#3b82f6",
-        "chart2": "#fb923c",
-        "chart3": "#22c55e",
-        "chart4": "#a855f7",
-        "chart5": "#ef4444",
-        "sidebar": "#020617",
-        "sidebarForeground": "#f8fafc",
-        "sidebarPrimary": "#3b82f6",
-        "sidebarPrimaryForeground": "#ffffff",
-        "sidebarAccent": "#1e293b",
-        "sidebarAccentForeground": "#f8fafc",
-        "sidebarBorder": "#334155",
-        "sidebarRing": "#3b82f6",
-        "radius": "1rem"
+      {
+        "id": "samandehi",
+        "title": "ساماندهی",
+        "link": "https://logo.samandehi.ir/",
+        "image": "https://www.digikala.com/statics/img/png/rezi.webp"
+      },
+      {
+        "id": "newlicence",
+        "title": "ساماندهی",
+        "image": "https://www.digikala.com/statics/img/png/kasbokar.webp",
+        "link": "https://qr.mojavez.ir/track/4739633"
+      },
+      {
+        "id": "jsdfiosdjfsdiofjsdf",
+        "title": "نماد اعتماد",
+        "image": "https://www.digikala.com/statics/img/png/sapra.webp",
+        "link": "https://torob.com/shop/42774"
       }
+    ],
+    "social_links": [
+      {
+        "label": "تلگرام",
+        "href": "https://t.me/",
+        "icon": "telegram"
+      },
+            {
+        "label": "اسلک",
+        "href": "https://slack.com/",
+        "icon": "slack"
+      },
+      {
+        "label": "اینستاگرام",
+        "href": "https://instagram.com/",
+        "icon": "instagram"
+      },
+      {
+        "label": "توییتر",
+        "href": "https://x.com/",
+        "icon": "x"
+      },
+      {
+        "label": "یوتیوب",
+        "href": "https://youtube.com/",
+        "icon": "youtube"
+      },
+      {
+        "label": "لینکدین",
+        "href": "https://linkedin.com/",
+        "icon": "linkedin"
+      },
+      {
+        "label": "ردیت",
+        "href": "https://reddit.com/",
+        "icon": "reddit"
+      }
+    ]
+  },
+  "layout": {
+    "header": {
+      "hasMegaMenu": true,
+      "hasAnnounce": true,
+      "announceMessage": "<div class=\"flex items-center justify-center gap-2\"><span class=\"animate-pulse\">✨</span><strong>فروش ویژه تابستانه</strong><a href=\"/products\" class=\"underline underline-offset-4\">مشاهده محصولات</a><span class=\"animate-pulse\">✨</span></div>"
+    },
+    "footer": {
+      "hasFeatureSection": true
+    },
+    "card": {
+      "style": "grid",
+      "productCardFields": ["brand", "rating", "price", "discount", "stock"]
+    }
+  },
+  "redirects": [
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/old-shop",
+      "destination": "/products",
+      "permanent": false
+    }
+  ],
+  "sitemap": {
+    "enabled": true,
+    "entries": [
+      {
+        "path": "/",
+        "lastModified": "2026-07-15T00:00:00.000Z",
+        "changeFrequency": "daily",
+        "priority": 1
+      },
+      {
+        "path": "/about",
+        "changeFrequency": "monthly",
+        "priority": 0.6
+      },
+      {
+        "path": "/products",
+        "changeFrequency": "daily",
+        "priority": 0.9
+      },
+      {
+        "path": "/posts",
+        "changeFrequency": "weekly",
+        "priority": 0.7
+      }
+    ]
+  },
+  "robots": {
+    "rules": [
+      {
+        "userAgent": "*",
+        "allow": "/",
+        "disallow": ["/api", "/signin", "/signup", "/panel"]
+      }
+    ]
+  },
+  "maintenance": {
+    "enabled": true,
+    "scope": "pages",
+    "mode": "maintenance",
+    "pages": [
+      {
+        "path": "/products",
+        "mode": "offHours",
+        "message": "صفحه درباره ما در حال حاضر خارج از ساعت کاری است.",
+        "workingHours": "شنبه تا چهارشنبه، ۰۹:۰۰ تا ۱۷:۰۰"
+      },
+      {
+        "path": "/cart",
+        "mode": "maintenance",
+        "message": "سبد خرید موقتاً در حال تعمیر است."
+      }
+    ],
+    "message": "این بخش موقتاً در دسترس نیست."
+  },
+  "theme": {
+    "light": {
+      "background": "#ffffff",
+      "foreground": "#09090b",
+      "card": "#ffffff",
+      "cardForeground": "#09090b",
+      "popover": "#ffffff",
+      "popoverForeground": "#09090b",
+      "primary": "#18181b",
+      "primaryForeground": "#fafafa",
+      "secondary": "#f4f4f5",
+      "secondaryForeground": "#18181b",
+      "muted": "#f4f4f5",
+      "mutedForeground": "#71717a",
+      "accent": "#f4f4f5",
+      "accentForeground": "#18181b",
+      "destructive": "#ef4444",
+      "border": "#e4e4e7",
+      "input": "#e4e4e7",
+      "ring": "#18181b",
+      "chart1": "#2563eb",
+      "chart2": "#16a34a",
+      "chart3": "#ca8a04",
+      "chart4": "#dc2626",
+      "chart5": "#9333ea",
+      "sidebar": "#fafafa",
+      "sidebarForeground": "#09090b",
+      "sidebarPrimary": "#18181b",
+      "sidebarPrimaryForeground": "#fafafa",
+      "sidebarAccent": "#f4f4f5",
+      "sidebarAccentForeground": "#18181b",
+      "sidebarBorder": "#e4e4e7",
+      "sidebarRing": "#18181b",
+      "radius": "0.625rem"
+    },
+    "dark": {
+      "background": "#09090b",
+      "foreground": "#fafafa",
+      "card": "#09090b",
+      "cardForeground": "#fafafa",
+      "popover": "#09090b",
+      "popoverForeground": "#fafafa",
+      "primary": "#fafafa",
+      "primaryForeground": "#18181b",
+      "secondary": "#27272a",
+      "secondaryForeground": "#fafafa",
+      "muted": "#27272a",
+      "mutedForeground": "#a1a1aa",
+      "accent": "#27272a",
+      "accentForeground": "#fafafa",
+      "destructive": "#ef4444",
+      "border": "#27272a",
+      "input": "#27272a",
+      "ring": "#d4d4d8",
+      "chart1": "#3b82f6",
+      "chart2": "#22c55e",
+      "chart3": "#eab308",
+      "chart4": "#ef4444",
+      "chart5": "#a855f7",
+      "sidebar": "#09090b",
+      "sidebarForeground": "#fafafa",
+      "sidebarPrimary": "#fafafa",
+      "sidebarPrimaryForeground": "#18181b",
+      "sidebarAccent": "#27272a",
+      "sidebarAccentForeground": "#fafafa",
+      "sidebarBorder": "#27272a",
+      "sidebarRing": "#d4d4d8",
+      "radius": "0.625rem"
     }
   }
+}

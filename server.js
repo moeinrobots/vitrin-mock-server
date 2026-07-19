@@ -2,7 +2,7 @@ const express = require("express");
 const config = require("./config.json");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8001;
 
 app.get("/config", (_request, response) => {
   response.json(config);
